@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="edu.foothill.tlilley.quickchemdraw.MainFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_drawFragment"
+            app:destination="@id/drawFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drawFragment"
+        android:name="edu.foothill.tlilley.quickchemdraw.DrawFragment"
+        android:label="Draw"
+        tools:layout="@layout/fragment_draw" >
+        <action
+            android:id="@+id/action_drawFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="edu.foothill.tlilley.quickchemdraw.ListFragment"
+        android:label="Documents"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_drawFragment"
+            app:destination="@id/drawFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_existingDrawFragment"
+            app:destination="@id/existingDrawFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/existingDrawFragment"
+        android:name="edu.foothill.tlilley.quickchemdraw.ExistingDrawFragment"
+        android:label="Edit"
+        tools:layout="@layout/fragment_existing_draw" >
+        <action
+            android:id="@+id/action_existingDrawFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <argument
+            android:name="currentDocument"
+            app:argType="edu.foothill.tlilley.quickchemdraw.Document" />
+    </fragment>
+</navigation>
