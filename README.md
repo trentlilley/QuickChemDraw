@@ -1,5 +1,5 @@
 # QuickChemDraw
-A quick and convenient way to draw chemical formulae when a whiteboard or pen / paper are not readily available. Submitted as my class project for CS 64A at foothill college.
+A quick and convenient way to draw chemical formulae when a whiteboard or pen / paper are not readily available.
 
 ## Todo
 
