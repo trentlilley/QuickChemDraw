@@ -1,5 +1,5 @@
 # QuickChemDraw
-A quick and convenient way to draw chemical formulae when a whiteboard or pen / paper are not readily available. Submitted as my class project for CS 64A at foothill college. At this stage it isn't much more than a drawing app with a hexagonal grid to help guide the drawing of six-membered rings.
+A quick and convenient way to draw chemical formulae when a whiteboard or pen / paper are not readily available. Submitted as my class project for CS 64A at foothill college.
 
 ## Todo
 
